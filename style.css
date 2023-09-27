@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    /* background-color: #999999; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    border-radius: 10px;
+background-color: #454545;
+max-width: 330px;
+margin: 90px auto 0;
+padding: 20px;
+box-shadow: 8px 8px 8px #181818;
+/* align-items: center;
+ */
+ text-align: center;
+}
+.height{
+    display: flex;
+    /* paddingleft: 10px; */
+    
+}
+.height p , .weight p{
+   
+    padding-right: 10px;
+    color: #fff;
+    margin-top: 4px;
+}
+.height input ,.weight input{
+    border-radius: 4px;
+    height: 30px;
+    outline: none;
+    font-size: 18px;
+    width: auto;
+}
+.weight{
+    display: flex; 
+    margin-top: 10px;
+}
+button{
+    text-decoration: none;
+    width: 90px;
+    height: 40px;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+#cal{
+    background-color: crimson;
+    transition: 0.4s ease;
+}
+#reset{
+    
+    background-color: #131313;
+    transition: 0.4s ease;
+}
+
+#cal:hover{
+    cursor: pointer;
+   transform: scale(1.04);
+    background-color: rgba(220, 20, 60, 0.74);
+}
+#reset:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    background-color:#131313c2
+}
+#warning-height{
+    visibility: hidden;                        
+    margin-left: 50px;
+    color: rgb(199, 155, 33);
+    
+
+}
+#warning-weight{
+    margin-left: 50px;
+    color: rgb(199, 155, 33);
+    visibility: hidden;
+
+}
+.output p{
+    color: #fff;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.styled-table {
+    box-shadow: 8px 8px 8px #181818;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #454545;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #454545;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #454545;
+}
+.con{
+    margin-left: 486PX;
+}
+
+@media(max-width:1000px) {
+
+
+    .con{
+        margin-left: 10px;
+    }
+    .styled-table{
+        width: 380px;
+    }
+    .height input ,.weight input{
+        width: 200px;
+    }
+}
